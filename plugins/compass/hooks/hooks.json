@@ -1,0 +1,16 @@
+{
+  "hooks": {
+    "SessionStart": [
+      {
+        "hooks": [
+          {
+            "type": "mcp_tool",
+            "server": "compass",
+            "tool": "get_context",
+            "input": {}
+          }
+        ]
+      }
+    ]
+  }
+}
