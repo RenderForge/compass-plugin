@@ -1,6 +1,6 @@
 ---
 name: compass-workflow
-description: How to work in a Compass-connected project: orient first, see the whole plan, bind work to a tracked task, record decisions and ADRs as you go, and mark done only when every acceptance criterion is met. Use at the start of every session and before claiming, recording or closing work.
+description: "How to work in a Compass-connected project: orient first, see the whole plan, bind work to a tracked task, record decisions and ADRs as you go, and mark done only when every acceptance criterion is met. Use at the start of every session and before claiming, recording or closing work."
 ---
 
 # Compass — Mandatory Workflow Rules

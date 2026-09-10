@@ -1,7 +1,7 @@
 {
   "name": "compass",
-  "description": "Compass for Claude Code: the project's working rules, and a briefing from Compass (mission, your claims, the ADRs for your work, governance) loaded at the start of every session.",
-  "version": "1.0.7568474",
+  "description": "Compass for Claude Code: the project's working rules, as a skill.",
+  "version": "1.0.8089757",
   "author": {
     "name": "RenderForge"
   }

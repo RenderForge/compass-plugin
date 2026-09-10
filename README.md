@@ -1,6 +1,6 @@
 # Compass plugin for Claude Code
 
-Compass for Claude Code: the project's working rules, and a briefing from Compass (mission, your claims, the ADRs for your work, governance) loaded at the start of every session.
+Compass for Claude Code: the project's working rules, as a skill.
 
 You do not install this by hand: the Compass setup command does it. In your project folder run
 
