@@ -214,6 +214,36 @@ before reporting completion to the engineer. This closes the loop so the
 next session's `get_context()` orient view doesn't keep listing the task
 as active.
 
+### Say what proved it
+
+Checking a criterion is knowledge that dies with the session unless you write
+it down. When a test, script or CI job is what proves a criterion, bind it at
+the moment you have just confirmed it:
+
+```
+manage_verifications("declare", feature="<slug>", clause=<N>, check="<test or script>")
+```
+
+`clause` is 1-based, the way the board numbers promises (AC1 = 1). CI then
+reports that check's pass/fail and the Reality Board's `code` column fills
+itself; until CI reports, the promise reads *pending* — declared is not proven.
+The binding is **stated, never inferred**: a criterion that happens to name a
+path is a hint, not proof (adr-031), so nothing records it unless you do. A
+feature whose criteria are all met by checks nobody declared still reads
+"unproven", which is the record lying about work you actually finished.
+
+### Check the criterion, not your memory of it
+
+"Done" is a claim about the code, so read the code. A queue where finished work
+still says `in_progress` is worse than no queue — the next session claims
+something already built, which is how 26 such tasks accumulated here.
+
+And a merge is not a result. A change can pass every gate and do nothing: the
+citation-index widening behind adr-046 merged green and moved no count at all
+until a reindex ran, because the incremental path only reads files that
+changed. Where a criterion is observable, observe it on the running system
+before you report it met.
+
 ## RULE 5 — Project governance loads at orient; follow it
 
 The project's working law — branch policy, merge policy, schema-change
