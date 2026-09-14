@@ -171,10 +171,12 @@ it's still fresh.
   immediately after the change. Always pass the feature it constrains — an
   unbound ADR reaches neither drift nor the orient scope.
 
-- **Tasks are complete from birth (adr-042)** — every task carries at least one
-  label saying what KIND of work it is (bug, feature, enhancement, chore, docs,
-  refactor, test) and a one-sentence English `business_summary`. Compass refuses
-  a task without them, and refuses a domain word as a label: WHERE a task lands
+- **Tasks are complete from birth (adr-042, adr-046)** — every task belongs to a
+  roadmap feature (`feature_id`), carries at least one label saying what KIND of
+  work it is (bug, feature, enhancement, chore, docs, refactor, test) and a
+  one-sentence English `business_summary`. Compass refuses a task without them —
+  a feature can be changed, never cleared; older tasks without one are flagged —
+  and refuses a domain word as a label: WHERE a task lands
   (its domains) is Compass's job, not a label. Put the task's UUID in every
   commit message — that is how Compass knows which PRs and files built it.
 
