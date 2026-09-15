@@ -177,8 +177,16 @@ it's still fresh.
   one-sentence English `business_summary`. Compass refuses a task without them —
   a feature can be changed, never cleared; older tasks without one are flagged —
   and refuses a domain word as a label: WHERE a task lands
-  (its domains) is Compass's job, not a label. Put the task's UUID in every
-  commit message — that is how Compass knows which PRs and files built it.
+  (its domains) is Compass's job, not a label.
+
+- **Every commit names its task (adr-041, adr-048)** — end every commit
+  message with the line `Task: <uuid>`, the task you claimed. That line is the
+  only way Compass links code to a task: without it the task shows no pull
+  requests or files under "Built in", never moves to staging or production by
+  itself, and a commit cannot be linked later. In a repo connected to Compass
+  the plugin refuses a `git commit` whose message has no task UUID — add the
+  line and commit again. No task fits the change? Claim or create one first
+  (RULE 2), never commit around it.
 
 - **Every task sits in an environment (adr-043)** — each project has the
   standard path development → staging → production plus any environments the

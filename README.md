@@ -1,6 +1,6 @@
 # Compass plugin for Claude Code
 
-Compass for Claude Code: the project's working rules, as a skill.
+Compass for Claude Code: the project's working rules, as a skill, and a commit check that keeps every commit linked to its task.
 
 You do not install this by hand: the Compass setup command does it. In your project folder run
 

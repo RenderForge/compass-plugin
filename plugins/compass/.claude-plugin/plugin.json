@@ -1,7 +1,7 @@
 {
   "name": "compass",
-  "description": "Compass for Claude Code: the project's working rules, as a skill.",
-  "version": "1.0.11728834",
+  "description": "Compass for Claude Code: the project's working rules, as a skill, and a commit check that keeps every commit linked to its task.",
+  "version": "1.0.14279594",
   "author": {
     "name": "RenderForge"
   }
